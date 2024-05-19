@@ -18,3 +18,13 @@ export const TEMAS = extendTheme({
         xl:24,
     }
 })
+
+
+
+// 2. Get the type of the CustomTheme
+type CustomThemeType = typeof TEMAS;
+
+// 3. Extend the internal NativeBase Theme
+declare module 'native-base' {
+  interface ICustomTheme extends CustomThemeType {}
+}

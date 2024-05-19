@@ -1,14 +1,16 @@
 import Principal from '../src/Principal'
-import { TEMAS } from '../src/estilos/temas';
-import { NativeBaseProvider } from 'native-base';
+import { NativeBaseProvider} from 'native-base'
+import { TEMAS } from '@/src/estilos/temas';
+import { StyleSheet, StatusBar } from 'react-native';
 
 
 
 export default function App(){
     return(
-        <NativeBaseProvider theme={TEMAS}>
+        <NativeBaseProvider theme={TEMAS} >
             <Principal/>
+            <StatusBar />
         </NativeBaseProvider>
+        
     );
 }
-
