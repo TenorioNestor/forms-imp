@@ -4,7 +4,7 @@ import { extendTheme } from "native-base"
 export const TEMAS = extendTheme({
     colors:{
         purple:{
-            300:'#453F93',
+            300:'#8992BF',
             600:'#453F93',
         },
         white:'#fff',

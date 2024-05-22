@@ -14,11 +14,11 @@ interface InputProps {
     secureTextEntry = false
   } : InputProps) : JSX.Element {
     return (
-      <FormControl mt={3} mr={10} ml={10}>
+      <FormControl mt={5} >
         {label && <FormControl.Label >{label}</FormControl.Label> }
         <Input
           placeholder={placeholder}
-          w="90%"
+          w="100%"
           borderRadius="lg"
           bgColor="gray.100"
           fontSize={16}
