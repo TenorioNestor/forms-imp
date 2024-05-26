@@ -1,9 +1,9 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { Icon } from "native-base";
+import {Ionicons} from "@expo/vector-icons"
 
-import Principal from "./Principal";
-import Perfil from "./Perfil";
 import Informacoes from "./Informacoes";
+import Perfil from "./Perfil";
+import Principal from "./Principal";
 
 const Tab = createBottomTabNavigator()
 
@@ -24,13 +24,13 @@ const tabs = [
   {
     name: 'Informações',
     component: Informacoes,
-    icon: 'calendar'
+    icon: 'info'
   },
   {
     name: 'Perfil',
     component: Perfil,
-    icon: 'search'
-  }
+    icon: 'people'
+  },
 ]
 
 export default function Tabs() {
@@ -44,7 +44,7 @@ export default function Tabs() {
           options={{
             headerShown: false,
             tabBarIcon: ({ color, size }) => (
-              <Icon name={tab.icon} color={color} size={size} />
+              <Ionicons name={tab.icon} color={color} size={size} />
             )
           }}
         />
