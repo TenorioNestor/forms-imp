@@ -1,36 +1,36 @@
 const sessoes = [
     {
         id:1,
-        titulo:"Dados da unidade",
+        titulo:"Dados do projeto",
         entradaTexto:[
             {
                 id:1,
-                label:"Nome da unidade",
-                placeholder:"Insira o nome da unidade"
+                label:"Nome do projeto",
+                placeholder:"Insira o nome do projeto"
             },
             {
                 id:2,
                 label:"CPNJ",
-                placeholder:"Insira o CPNJ da unidade"
+                placeholder:"Insira o CPNJ do projeto"
             },
             {
                 id:3,
-                label:"Parceiro Futturis",
-                placeholder:"Insira o nome do parceiro Futturis"
+                label:"Parceiro Comercial",
+                placeholder:"Insira o nome do parceiro comercial"
             }
         ],
         checkBox:[
             {
                 id:1,
-                value:"Implantação"
+                value:"Implantação de novo projeto"
             },
             {
                 id:2,
-                value:"Atualização"
+                value:"Atualização de um projeto"
             },
             {
                 id:3,
-                value:"Reagendamento"
+                value:"Reagendamento de projeto"
             }
         ]
     },
@@ -52,7 +52,7 @@ const sessoes = [
         checkBox:[
             {
                 id:1,
-                value:"Portaria Remora"
+                value:"Portaria Remota"
             },
             {
                 id:2,

@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import {Ionicons} from "@expo/vector-icons"
 
-import Informacoes from "./Informacoes";
+import Aprovacoes from "./Aprovacoes";
 import Perfil from "./Perfil";
 import Principal from "./Principal";
 
@@ -12,7 +12,8 @@ const screenOptions = {
     backgroundColor: "#002851"
   },
   tabBarActiveTintColor: "#339cff",
-  tabBarInactiveTintColor: "#FFF"
+  tabBarInactiveTintColor: "#FFF",
+
 }
 
 const tabs = [
@@ -22,9 +23,9 @@ const tabs = [
     icon: 'home'
   },
   {
-    name: 'Informações',
-    component: Informacoes,
-    icon: 'info'
+    name: 'Aprovações',
+    component: Aprovacoes,
+    icon: 'git-merge-outline'
   },
   {
     name: 'Perfil',
